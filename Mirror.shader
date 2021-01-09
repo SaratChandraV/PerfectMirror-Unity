@@ -4,9 +4,9 @@ Shader "Custom/Mirror"
 {
 	Properties
 	{
-		_MainTex ("Base (RGB)", 2D) = "white" {}
+		_MainTex ("Base (RGB)", 2D) = "white" {} //Alpha channel of this texture is where the reflection takes place.
 		_MainTexAlpha ("Main Tex Alpha",Range(0,1)) = 1.0
-		_ReflTexAlpha ("Refl Tex Alpha",Range(0,1)) = 1.0
+		_ReflTexAlpha ("Refl Tex Alpha",Range(0,1)) = 1.0 // This is regulates the insesity of reflection ranging from 1 being perfect mirror to 0 being no reflection.
 		[HideInInspector] _ReflectionTex ("", 2D) = "white" {}
 	}
 	SubShader
